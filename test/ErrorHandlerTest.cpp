@@ -26,5 +26,5 @@ TEST(ErrorHandlerTest, HandleError_Success) {
     executor.ProcessCommands();
 
     // Check if the exception was logged
-    EXPECT_EQ(logger.GetLastLog(), "Exception occurred: std::exception");
+    EXPECT_EQ(logger.GetLastLog(), "Exception caught: std::exception");
 }
